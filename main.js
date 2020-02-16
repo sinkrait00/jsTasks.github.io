@@ -75,8 +75,12 @@ function fact() {
 function larger() {
    const getvalue1 = document.getElementById('input_firstValue').value;
    const getvalue2 = document.getElementById('input_secondValue').value;
+   if(getvalue1 =="" || getvalue2==""){
+       alert("Ошибка! Заполните поля!");
+       return;
+   }
    const checkedValue1 = Number(getvalue1);
-   const checkedValue2= Number(getvalue2)
+   const checkedValue2= Number(getvalue2);
    
     if (checkedValue1 ==NaN || checkedValue2==NaN){
         alert("Ошибка! Введите число!");
