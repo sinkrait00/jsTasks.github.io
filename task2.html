@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html">Задача №1</a>
+                <a href="task2.html">Задача №2</a>
+                <a href="task3.html">Задача №3</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <main>
+            <h1 class="task">Задача №2</h1>
+            <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №1</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript program to display the current day and time in the following format.  <br>
+                Sample Output : <br>
+            Today is : Friday. <br>
+            Current time is : 4 PM : 50 : 22<br>
+
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <div class="date_block">
+                <p>Today is : <span id="date_block__day"></span></p>
+                <p>Current time is : <span id="date_block__time"></span> </p>
+
+            </div>
+            
+        </div>
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №2</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript function that reverse a number. <br>
+                Example x = 32243;<br>
+                Expected Output : 34223<br>
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <input id="input_value" type="text" placeholder="enter some value" >
+            <button id="reverse_button" onclick="reverse_value()" >Реверс</button>
+            <p class="output"> Вывод: <span id="value_result"></span></p>
+               
+           
+        </div>
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №3</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript program to calculate the factorial of a number. In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. 
+For example, 5! = 5 x 4 x 3 x 2 x 1 = 120 	
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <input id="input_fact" type="text" placeholder="enter some value" >
+            <button id="fact_button" onclick="fact()" >Решить факториал</button>
+            <p class="output"> Вывод: <span id="fact_result"></span></p>
+               
+           
+        </div>
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №4</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript program that accept two integers and display the larger.	
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <input id="input_firstValue" type="text" placeholder="enter some value" style="margin-bottom: 0;" >
+            <p>VS</p>
+            <input id="input_secondValue" type="text" placeholder="enter some value" >
+            <button id="larger_button" onclick="larger()" >Узнать какое больше</button>
+            <p class="output"> Вывод: <span id="larger_result"></span></p>
+               
+           
+        </div>
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

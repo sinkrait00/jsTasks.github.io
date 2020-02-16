@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html">Задача №1</a>
+                <a href="task2.html">Задача №2</a>
+                <a href="task3.html">Задача №3</a>
+            </div>
+
+        </nav>
+        <div class="container">
+            <main>
+                
+                <div class="exercise">
+                <h1 class="task">Задача №1</h1>
+                <h2 class="exercise_title">Задание №1</h2>
+                <p class="exercise_sentence">
+                    for (var i = 0; i < 10; i++) {<br>
+                        setTimeout(function() {<br>
+                            console.log(i);<br>
+                        }<br>
+                    };<br>
+
+                    <br>
+                   Что выведет консоль и почему?
+                </p>
+                <h2 class="answer">Ответ</h2>
+                <p>Выведется число 10, т.к. setTimeout начинает свою работу только после завершения цикла и используется переменная i, которая уже равна 10</p>
+            </div>
+            </main>
+        </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
