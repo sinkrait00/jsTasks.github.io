@@ -186,3 +186,102 @@ ctx.stroke();
 
 }
 }
+
+
+// Task 3
+
+
+//exercise 1
+
+function patter() {
+    let patter = document.getElementById('patter_block');
+    const text = [];
+    for(let i=0;i<6;i++){
+        text[i]= patter.children[i].textContent;
+    }
+    patter.children[0].textContent = text[2];
+    patter.children[1].textContent = text[4];
+    patter.children[2].textContent = text[1];
+    patter.children[3].textContent = text[5];
+    patter.children[4].textContent = text[3];
+    patter.children[5].textContent = text[0];
+    for(let i=0;i<6;i++){
+       console.log(patter.children[i].textContent);
+    }    
+  
+}
+
+
+//exercise 2
+function paint(){
+    const elements = document.getElementsByClassName('element');
+    for(let i=0;i<elements.length;i++){
+        if(i<elements.length/2){
+            elements[i].style.color = "red"
+        }else{
+            elements[i].style.color = "green";
+        }
+    }
+}
+
+
+//exercise 3
+
+
+function addTodoEl(){
+    const tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+    const todo_list = document.getElementById('todo-list');
+    let new_elem;
+    for(let i=0;i<tasks.length;i++){
+        new_elem = document.createElement("li");
+        new_elem.className = "todo_task";
+        new_elem.innerText = tasks[i];
+        todo_list.appendChild(new_elem);
+    }
+}
+//exercise 4
+
+function addHr(){
+    const par = document.querySelectorAll('article > p')
+    for(let el of par){
+    
+        el.innerHTML += '<hr>'
+}
+}
+//exercise 5
+
+function rep_and_del(){
+    let cart_items = document.getElementById('cart-items');
+    for(let i=0;i<cart_items.children.length;i++){
+        if(cart_items.children[i].textContent=="Cola 1.5 l. x 1"){
+            cart_items.children[i].remove();
+        }
+        if(cart_items.children[i].textContent=="Chocolate barx 3"){
+            const new_div = document.createElement("div");
+            new_div.className = "item";
+            new_div.innerText =  "Canned Fish";
+            const new_span = document.createElement("span");
+            new_span.className = "qty";
+            new_span.innerText = "x 4";
+            new_div.appendChild(new_span);
+
+            cart_items.replaceChild(new_div,cart_items.children[i])
+        }
+    }
+}
+
+//exercise 6
+
+
+function addItem(){
+    let task = prompt("Введите, что хотите сделать:");
+    if(task == "" || task==NaN || task==undefined){
+        return;
+    }else{
+        let todoList = document.getElementById('todoList');
+        const new_task = document.createElement('li');
+        new_task.className="newTaskItem";
+        new_task.innerText = task;
+        todoList.appendChild(new_task);
+    }
+}

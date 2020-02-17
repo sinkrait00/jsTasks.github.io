@@ -6,6 +6,9 @@ a{
     text-decoration: none;
     color: #191919;
 }
+li{
+    list-style: none;
+}
 body{
     
     background: #191919;
@@ -88,7 +91,13 @@ main{
 #join_button,
 #getMonth_button,
 #checkFirstChar_button,
-#smile_button{
+#smile_button,
+#patter_button,
+#paint_button,
+#addTodoEl_button,
+#addHr_button,
+#rep_and_del_button,
+#addItem_button{
     position: relative;
     padding: 10px 20px;
     background: #EADCDC;
@@ -99,7 +108,11 @@ main{
     font-family: 'Montserrat', sans-serif;
     border-bottom: 5px solid #191919;    
 }
-#smile_button{
+#smile_button,
+#patter_button,
+#paint_button,
+#rep_and_del_button,
+#addItem_button{
     margin: 30px 0;
 }
 #reverse_button:active,
@@ -108,7 +121,13 @@ main{
 #join_button:active,
 #getMonth_button:active,
 #checkFirstChar_button:active,
-#smile_button:active
+#smile_button:active,
+#patter_button:active,
+#paint_button:active,
+#addTodoEl_button:active,
+#addHr_button:active,
+#rep_and_del_button:active,
+#addItem_button:active
 {
     top: 5px;
     padding-bottom: 15px;
@@ -120,17 +139,30 @@ border-bottom: none;
 #join_result,
 #getMonth_result,
 #checkFirstChar_result,
-#smile_result{
+#smile_result,
+#patter_result{
     padding: 10px;
     background: #EADCDC;
-   
     color: #191919;
     border-radius: 5px;
     margin-left: 15px;
     
 }
-
+#patter_result{
+    display: flex;
+}
 .output{
     margin-top: 30px;
    
+}
+
+.todoList{
+    border-radius: 5px;
+    border: 5px solid #EADCDC;
+    padding: 20px;
+}
+.newTaskItem{
+    margin: 15px 0;
+    border-bottom: 3px solid #191919;
+    list-style: square outside;
 }

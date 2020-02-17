@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Task 3</title>
 </head>
 <body>
     <nav>
@@ -17,5 +17,215 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <main>
+            <h1 class="task">Задача №3</h1>
+
+            <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №1</h2>
+            <p class="exercise_sentence">
+                <strong>На странице есть верстка:</strong><br>
+                <br>
+Ядра в вёдра, выдру в тундру!<br>
+Выдрав с выдры в тундре гетры<br>
+В недрах тундры, выдры в гетрах <br>
+Вытру гетрой выдре морду <br>
+Тырят в вёдра ядра кедров!<br>
+Вытру выдрой ядра кедров<br>
+<br>
+<strong>Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль, чтобы получилась осмысленная скороговорка.</strong><br>
+<br>
+<strong>Вывод в консоли:</strong><br>
+<br>
+В недрах тундры, выдры в гетрах<br>
+Тырят в вёдра ядра кедров!<br>
+Выдрав с выдры в тундре гетры<br>
+Вытру выдрой ядра кедров<br>
+Вытру гетрой выдре морду<br>
+Ядра в вёдра, выдру в тундру!<br>
+
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <div id="patter_block">
+                <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+                <div id="string-2">Выдрав с выдры в тундре гетры</div>
+                <div id="string-3">В недрах тундры, выдры в гетрах </div>
+                <div id="string-4">Вытру гетрой выдре морду </div>
+                <div id="string-5">Тырят в вёдра ядра кедров!</div>
+                <div id="string-6">Вытру выдрой ядра кедров</div>
+            </div>
+            <button id="patter_button" onclick="patter()">Переставить строки</button>
+        </div>
+
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №2</h2>
+            <p class="exercise_sentence">
+                <strong>На странице есть верстка:</strong><br>
+        
+
+                Element 1<br>
+                Element 2<br>
+                Element 3<br>
+                Element 4<br>
+                Element 5<br>
+                Element 6<br>
+                
+               <strong> С помощью JS необходимо первым трем  элементам задать красный цвет текста, а остальным трем - зеленый.</strong>
+                
+
+            </p>
+            <h2 class="answer">Ответ</h2>
+            <div id="paint_block">
+                <div class="element">Element 1</div>
+                <div class="element">Element 2</div>
+                <div class="element">Element 3</div>
+                <div class="element">Element 4</div>
+                <div class="element">Element 5</div>
+                <div class="element">Element 6</div>
+
+            </div>
+            <button id="paint_button" onclick="paint()">Расскрасить</button>
+        </div>
+
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №3</h2>
+            <p class="exercise_sentence">
+                На странице есть контейнер "ol id="todo-list" ", необходимо с помощью цикла добавить в него пять задач (элементов "li") с классом task и текстом, взятым из массива задач из пяти элементов: <br>
+
+                    var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];<br>
+                    
+                    Ожидаемый результат в инспекторе после выполнения скрипта:<br>
+                    
+                    "ol id="todo-list"><br>
+                        "li class="task">Buy lemonade" "/li"<br>
+                        "li class="task">Make toasts" "/li"<br>
+                        "li class="task">Repair car" "/li"<br>
+                        "li class="task">Play games" "/li"<br>
+                        "li class="task">Pet a cat" "/li"<br>
+                    "/ol"<br>
+                    
+            <h2 class="answer">Ответ</h2>
+            <div id="todoEl_block">
+                <ol id="todo-list">
+                </ol>
+            </div>
+            <button id="addTodoEl_button" onclick="addTodoEl()">Добавить элементы</button>
+        </div>
+
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №4</h2>
+            <p class="exercise_sentence">
+                На странице есть следующая разметка:<br>
+
+"article">"<br>
+"h3"What is Lorem Ipsum?"/h3"<br>
+"p"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."/p"<br>
+"h3"Where does it come from?"/h3"<br>
+"p"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero"/p"<br>
+"h3"Why do we use it?"/h3"<br>
+"p"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."/p"<br>
+"/article"<br>
+
+Вам необходимо с помощью JavaScript вставить после каждого тега "p" тег "hr", для визуального отделения абзацев друг от друга.<br>
+Указания:<br>
+Подразумевается, что вышеуказанная разметка находится внутри тега "body".<br>
+Нельзя модифицировать указанную разметку.<br>
+За использование цикла дополнительные баллы.<br>
+
+                    
+            <h2 class="answer">Ответ</h2>
+
+            <article>
+                <h3>What is Lorem Ipsum?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                <h3>Where does it come from?</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero</p>
+                <h3>Why do we use it?</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </article>
+                
+            <button id="addHr_button" onclick="addHr()">Добавить разделение</button>
+        </div>
+
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №5</h2>
+            <p class="exercise_sentence">
+                Дана такая разметка:<br>
+
+                "div id="cart-items" "<br>
+                    "div class="item">Milk 1 l." span class="qty">x 2 "/span/div<br>
+                    "div class="item">Cola 1.5 l. "span class="qty">x 1"/span"/div"<br>
+                    "div class="item">Bread" span class="qty">x 2"/span"/div"<br>
+                    "div class="item">Cheese" span class="qty">x 1"/span"/div"<br>
+                    "div class="item">Chocolate bar" span class="qty">x 3"/span"/div"<br>
+                "/div"<br>
+                
+                Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на "Canned Fish", количеством 4 штуки.<br>
+                
+                Указания:<br>
+                Для удаления использовать .remove()<br>
+                Для замены использовать .replaceChild()<br>
+                Подразумевается, что вышеуказанная разметка находится внутри тега "body".<br>
+                
+
+                    
+            <h2 class="answer">Ответ</h2>
+
+            <div id="cart-items">
+                <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+                <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+                <div class="item">Bread<span class="qty">x 2</span></div>
+                <div class="item">Cheese<span class="qty">x 1</span></div>
+                <div class="item">Chocolate bar<span class="qty">x 3</span></div>
+            </div>
+            
+                
+            <button id="rep_and_del_button" onclick="rep_and_del()">Изменить заказ</button>
+        </div>
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №6</h2>
+            <p class="exercise_sentence">
+                Напишите программу для создания списка задач, которые будет вводить пользователь:<br>
+            
+                Для каждого пункта:<br>
+                Запрашивайте содержимое пункта у пользователя с помощью prompt.<br>
+                Создавайте пункт и добавляйте его к UL.<br>
+                Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.<br>
+                
+                
+
+                    
+            <h2 class="answer">Ответ</h2>
+                <div class="todoList">Список задач:
+                <ul id="todoList">
+
+                </ul>
+            </div>
+                
+            <button id="addItem_button" onclick="addItem()">Добавить задачу</button>
+        </div>
+
+
+
+        </main>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
