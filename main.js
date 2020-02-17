@@ -54,6 +54,10 @@ document.getElementById('value_result').innerText = revValue;
 function fact() {
     let res=1;
    const getvalue = document.getElementById('input_fact').value;
+   if(getvalue =="" ){
+    alert("Ошибка! Заполните поле!");
+    return;
+}
    const checkedValue = Number(getvalue);
     if (checkedValue==NaN){
         alert("Ошибка! Введите число!");
@@ -93,4 +97,92 @@ function larger() {
             document.getElementById('larger_result').innerText = checkedValue2 + " наибольшее";
         }
     }
+}
+
+
+//exercise 5
+
+function join_el() {
+    
+    const myColor = ["Red", "Green", "White", "Black"];
+    document.getElementById('join_result').innerText = myColor.join("+");
+}
+
+
+//exercise 6
+function getMonth (date){
+    options=[ "January",  "February", 
+    "March", "April",  "May", 
+    "June", "July", "August", 
+    "September", "October", "November", 
+    "December" ];
+
+    document.getElementById('getMonth_result').innerText += '" ' + options[date.getMonth()] + ' " ;';
+
+}
+
+getMonth(new Date("10/11/2009"));
+getMonth(new Date("11/13/2014")); 
+
+
+//exercise 7
+
+
+function checkFirstChar(){
+    if(document.getElementById('input_checkFirstChar').value[0] ==undefined){
+        alert("Введите строковый символ!");
+        return;
+    } else if (isFinite(document.getElementById('input_checkFirstChar').value[0])){
+        alert('Первый символ не может быть числом!');
+        return;
+    }else{
+    const checkChar = document.getElementById('input_checkFirstChar').value[0].toUpperCase();
+    document.getElementById('input_checkFirstChar').value[0]=== checkChar ? document.getElementById('checkFirstChar_result').innerText = "Первая буква верхнего регистра" : document.getElementById('checkFirstChar_result').innerText = "Первая буква нижнего регистра";
+    }
+}
+
+
+//exercise 8
+function drawSmile()
+  {
+var canvas = document.getElementById('smile_result');
+if (canvas.getContext)
+{
+let ctx = canvas.getContext('2d'); 
+
+const x = 140, 
+y= 70,
+ r = 50;
+
+ctx.lineWidth = 2;
+ctx.strokeStyle = '#000';
+
+
+ctx.beginPath();
+ctx.arc(x,y, r, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#EFC2BF';
+ctx.fill();
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.arc(x-20,y-15,r/15,2*Math.PI,false);
+ctx.lineWidth = 1;
+ctx.fillStyle = '#000';
+ctx.fill();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(x+20,y-15,r/15,2*Math.PI,false);
+ctx.lineWidth = 1;
+ctx.fillStyle = '#000';
+ctx.fill();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(x,y+20,r/2.2,Math.PI,false);
+ctx.lineWidth = 2;
+ctx.stroke();
+
+}
 }

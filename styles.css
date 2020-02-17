@@ -28,8 +28,8 @@ body{
 }
 
 .navigation a{
-    color: #EADCDC;
-    background: #191919;
+    color: #191919;
+    background: #DCC2A3;
     padding: 15px;
     border-radius: 5px;
 }
@@ -43,17 +43,18 @@ main{
 }
 
 .exercise{
-    background: #191919;
+    background: #DCC2A3;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     align-self: center;
 
-    color: #EADCDC;
+    color: #191919;
     border-radius: 5px;
     padding: 0 30px;
     margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .task{
@@ -62,7 +63,7 @@ main{
     text-align: center;
 }
 .exercise_sentence{
-    border: 10px solid #EADCDC;
+    border: 10px solid #191919;
     padding: 30px;
     border-radius: 5px;
 
@@ -71,28 +72,58 @@ main{
 #input_value,
 #input_fact,
 #input_firstValue,
-#input_secondValue{
+#input_secondValue,
+#input_checkFirstChar{
     width: 200px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;
+    background: #EADCDC;
 }
 
 #reverse_button,
 #fact_button,
-#larger_button{
+#larger_button,
+#join_button,
+#getMonth_button,
+#checkFirstChar_button,
+#smile_button{
+    position: relative;
     padding: 10px 20px;
     background: #EADCDC;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 5px solid #191919;    
 }
-
+#smile_button{
+    margin: 30px 0;
+}
+#reverse_button:active,
+#fact_button:active,
+#larger_button:active,
+#join_button:active,
+#getMonth_button:active,
+#checkFirstChar_button:active,
+#smile_button:active
+{
+    top: 5px;
+    padding-bottom: 15px;
+border-bottom: none;
+}
 #value_result,
 #fact_result,
-#larger_result{
+#larger_result,
+#join_result,
+#getMonth_result,
+#checkFirstChar_result,
+#smile_result{
     padding: 10px;
     background: #EADCDC;
+   
     color: #191919;
     border-radius: 5px;
     margin-left: 15px;

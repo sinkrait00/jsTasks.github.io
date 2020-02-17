@@ -88,6 +88,75 @@ For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
            
         </div>
 
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №5</h2>
+            <p class="exercise_sentence">
+                Write a simple JavaScript program to join all elements of the following array into a string. <br>
+                Sample array : myColor = ["Red", "Green", "White", "Black"];<br>
+                Expected Output : <br>
+                "Red,Green,White,Black"<br>
+                "Red+Green+White+Black"<br>
+                            </p>
+            <h2 class="answer">Ответ</h2>
+           <p>myColor = ["Red", "Green", "White", "Black"];</p>
+            <button id="join_button" onclick="join_el()" >Join elements</button>
+            <p class="output"> Вывод: <span id="join_result"></span></p>
+               
+           
+        </div>
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №6</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript function to get the month name from a particular date. <br>
+Test Data :<br>
+console.log(month_name(new Date("10/11/2009"))); <br>
+console.log(month_name(new Date("11/13/2014")));<br>
+Output :<br>
+"October" <br>
+"November" <br>
+
+                            </p>
+            <h2 class="answer">Ответ</h2>
+           <p>console.log(month_name(new Date("10/11/2009"))); <br>
+            console.log(month_name(new Date("11/13/2014")));
+            </p>
+            <p class="output"> Вывод: <span id="getMonth_result"></span></p>
+               
+           
+        </div>
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №7</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript program to test the first character of a string is uppercase or not
+                            </p>
+            <h2 class="answer">Ответ</h2>
+            <input id="input_checkFirstChar" type="text" placeholder="enter some word" >
+            <button id="checkFirstChar_button" onclick="checkFirstChar()" >Проверить</button>
+            <p class="output"> Вывод: <span id="checkFirstChar_result"></span></p>
+               
+           
+        </div>
+
+
+        <div class="exercise">
+            
+            <h2 class="exercise_title">Задание №8</h2>
+            <p class="exercise_sentence">
+                Write a JavaScript program to draw a smile	
+                            </p>
+            <h2 class="answer">Ответ</h2>
+            <button id="smile_button" onclick="drawSmile()" >Нарисовать смайлик</button>
+             <canvas id="smile_result"></canvas>
+               
+           
+        </div>
+
         </main>
     </div>
     <script src="main.js"></script>
